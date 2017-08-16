@@ -1,0 +1,186 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.8rem;
+  font-family: "Athletico Clean", "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif; }
+
+input[type=text], input[type=submit], textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline-style: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background-color: transparent;
+  font-size: 1.8rem; }
+  input[type=text]:focus, input[type=submit]:focus, textarea:focus {
+    outline-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-style: 1.8rem; }
+
+:-ms-input-placeholder {
+  color: #ccc;
+  font-style: 1.8rem; }
+
+::-moz-placeholder {
+  color: #ccc;
+  font-style: 1.8rem; }
+
+:-moz-placeholder {
+  color: #ccc;
+  font-style: 1.8rem; }
+
+.header {
+  text-align: center; }
+  .header img {
+    width: 160px; }
+
+.container {
+  width: 720px;
+  margin: 0 auto; }
+
+.pageHeader {
+  position: relative;
+  height: 320px;
+  background-image: url(./images/recruit01.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .pageHeader__inner {
+    position: relative; }
+  .pageHeader .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35); }
+  .pageHeader h1 {
+    padding-top: 145px;
+    color: #FFF;
+    font-size: 3.2rem;
+    text-align: center; }
+
+.contentContact {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  font-weight: bold; }
+
+.contactForm .field {
+  margin-bottom: 48px; }
+  .contactForm .field label {
+    display: block;
+    margin-bottom: 12px; }
+  .contactForm .field input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 4px; }
+  .contactForm .field input[type=radio], .contactForm .field input[type=checkbox] {
+    display: none; }
+  .contactForm .field input[type="radio"], .contactForm .field .checkbox {
+    box-sizing: border-box;
+    -webkit-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    position: relative;
+    display: inline-block;
+    /*margin: 0 12px 8px 0;
+    padding: 12px 12px 12px 42px;*/
+    padding-right: 20px;
+    margin-right: 20px;
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer; }
+    .contactForm .field input[type="radio"]:hover:after, .contactForm .field .checkbox:hover:after {
+      borderColor: #52e25a; }
+    .contactForm .field input[type="radio"]:after, .contactForm .field .checkbox:after {
+      -webkit-transition: #52e25a 0.2s linear;
+      transition: #52e25a 0.2s linear;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      display: block;
+      margin-top: -10px;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #bbb;
+      border-radius: 50%;
+      content: ''; }
+  .contactForm .field input[type="radio"] {
+    font-size: 1.4rem; }
+    .contactForm .field input[type="radio"]:before {
+      -webkit-transition: opacity 0.2s linear;
+      transition: opacity 0.2s linear;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      display: block;
+      margin-top: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #52e25a;
+      content: '';
+      opacity: 0; }
+      input[type=radio]:checked + .contactForm .field input[type="radio"]:before {
+        opacity: 1; }
+  .contactForm .field .textInput {
+    border: 2px solid #000;
+    width: 100%;
+    height: 48px;
+    padding-right: 14px;
+    padding-left: 14px; }
+    .contactForm .field .textInput:focus {
+      border-color: #52e25a;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .contactForm .field .textInput.textarea {
+      padding-top: 14px;
+      height: 180px; }
+.contactForm .subText {
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-top: 12px; }
+
+.userActions .submitBtn {
+  width: 100%;
+  height: 94px;
+  border: 2px solid #52e25a;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #52e25a; }
+  .userActions .submitBtn:hover {
+    background-color: #52e25a;
+    color: #FFF; }
+
+.footer {
+  padding-bottom: 32px;
+  text-align: center; }
+  .footer img {
+    height: 87px; }
+
+/*# sourceMappingURL=style.css.map */
